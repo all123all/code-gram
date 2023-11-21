@@ -2,20 +2,16 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
+    <div class="d-flex text-white justify-content-around">
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/23097578?v=4" class="rounded-circle" width="150" alt="">
+        </div>
+        <div class="d-flex flex-column align-items-end justify-content-center">
+            <div><h1>@all123all</h1></div>
+            <div class="d-flex">
+                <div class="pe-4"><strong>123</strong> posts</div>
+                <div class="pe-4"><strong>123</strong> followers</div>
+                <div class="pe-4"><strong>123</strong> following</div>
             </div>
         </div>
     </div>
